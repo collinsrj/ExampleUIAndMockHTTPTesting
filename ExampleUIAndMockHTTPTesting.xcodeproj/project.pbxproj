@@ -14,6 +14,7 @@
 		1159D6421BB8168600815290 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1159D6401BB8168600815290 /* LaunchScreen.storyboard */; };
 		1159D64D1BB8168700815290 /* ExampleUIAndMockHTTPTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159D64C1BB8168700815290 /* ExampleUIAndMockHTTPTestingTests.swift */; };
 		1159D6581BB8168700815290 /* ExampleUIAndMockHTTPTestingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159D6571BB8168700815290 /* ExampleUIAndMockHTTPTestingUITests.swift */; };
+		A632F89BC4E90785897F211F /* Pods_ExampleUIAndMockHTTPTestingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0015F79313EAD7400E27F715 /* Pods_ExampleUIAndMockHTTPTestingUITests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0015F79313EAD7400E27F715 /* Pods_ExampleUIAndMockHTTPTestingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleUIAndMockHTTPTestingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1159D6341BB8168600815290 /* ExampleUIAndMockHTTPTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleUIAndMockHTTPTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1159D6371BB8168600815290 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1159D6391BB8168600815290 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		1159D6531BB8168700815290 /* ExampleUIAndMockHTTPTestingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUIAndMockHTTPTestingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1159D6571BB8168700815290 /* ExampleUIAndMockHTTPTestingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUIAndMockHTTPTestingUITests.swift; sourceTree = "<group>"; };
 		1159D6591BB8168700815290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C1EFF79B1B9293690A6C8E1 /* Pods-ExampleUIAndMockHTTPTestingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleUIAndMockHTTPTestingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleUIAndMockHTTPTestingUITests/Pods-ExampleUIAndMockHTTPTestingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		94FD90F54CC33E64240F7534 /* Pods-ExampleUIAndMockHTTPTestingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleUIAndMockHTTPTestingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleUIAndMockHTTPTestingUITests/Pods-ExampleUIAndMockHTTPTestingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A632F89BC4E90785897F211F /* Pods_ExampleUIAndMockHTTPTestingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				1159D64B1BB8168700815290 /* ExampleUIAndMockHTTPTestingTests */,
 				1159D6561BB8168700815290 /* ExampleUIAndMockHTTPTestingUITests */,
 				1159D6351BB8168600815290 /* Products */,
+				BB7BF65668545569C6840529 /* Pods */,
+				9A45E44A05BAAB0D569159A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = ExampleUIAndMockHTTPTestingUITests;
 			sourceTree = "<group>";
 		};
+		9A45E44A05BAAB0D569159A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0015F79313EAD7400E27F715 /* Pods_ExampleUIAndMockHTTPTestingUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB7BF65668545569C6840529 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94FD90F54CC33E64240F7534 /* Pods-ExampleUIAndMockHTTPTestingUITests.debug.xcconfig */,
+				6C1EFF79B1B9293690A6C8E1 /* Pods-ExampleUIAndMockHTTPTestingUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,9 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1159D6621BB8168700815290 /* Build configuration list for PBXNativeTarget "ExampleUIAndMockHTTPTestingUITests" */;
 			buildPhases = (
+				65F0E61BB156288BF5461544 /* Check Pods Manifest.lock */,
 				1159D64F1BB8168700815290 /* Sources */,
 				1159D6501BB8168700815290 /* Frameworks */,
 				1159D6511BB8168700815290 /* Resources */,
+				703118E4679BB98086F27BC8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +275,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65F0E61BB156288BF5461544 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		703118E4679BB98086F27BC8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExampleUIAndMockHTTPTestingUITests/Pods-ExampleUIAndMockHTTPTestingUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1159D6301BB8168600815290 /* Sources */ = {
@@ -442,6 +501,7 @@
 		};
 		1159D6631BB8168700815290 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94FD90F54CC33E64240F7534 /* Pods-ExampleUIAndMockHTTPTestingUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ExampleUIAndMockHTTPTestingUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -454,6 +514,7 @@
 		};
 		1159D6641BB8168700815290 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C1EFF79B1B9293690A6C8E1 /* Pods-ExampleUIAndMockHTTPTestingUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ExampleUIAndMockHTTPTestingUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -483,6 +544,7 @@
 				1159D65E1BB8168700815290 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1159D65F1BB8168700815290 /* Build configuration list for PBXNativeTarget "ExampleUIAndMockHTTPTestingTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +553,7 @@
 				1159D6611BB8168700815290 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1159D6621BB8168700815290 /* Build configuration list for PBXNativeTarget "ExampleUIAndMockHTTPTestingUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +562,7 @@
 				1159D6641BB8168700815290 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
